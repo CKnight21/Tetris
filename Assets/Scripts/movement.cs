@@ -72,7 +72,7 @@ public class Movement : MonoBehaviour
 		if (!gameObject.GetComponent<CubeArray>().getCubePositionFromScene())
 		{
 			actualGroup.transform.position -= pos;
-			GameObject.Find("CantMove").GetComponent<AudioSource>().Play();
+            GameObject.Find("CantMove").GetComponent<AudioSource>().Play();
 			if (pos == Vector3.down)
 			{
 				spawnNew();
